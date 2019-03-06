@@ -17,8 +17,8 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |person, details|
     details.each do |detail, data|
-      data.delete_if
-      binding.pry {|ice_cream| ice_cream == "strawberry"}
+      binding.pry
+      data.delete_if {|ice_cream| ice_cream == "strawberry"}
     end 
   end 
 end
